@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <p> 
+        상대경로 vs 절대경로
+        1. 상대경로 : 현재 문서(위치) 기준으로 상대적인 경로
+            1. ./ 또는 생략     : 현재 위치
+            2. ../              : 현재 위치의 상위 위치로 한 번 이동
+            3. ../../           : 현재 위치의 상위 위치로 2번 이동
+            4. ../폴더명/파일명 : 현재 위치의 상위 위치로 한 번 이동 후 폴더 이동
+        2. 절대경로 : 모든 경로
+    </p>
+    <h1> 이미지 마크업 1. src="사진경로" 속성 </h1>
+    <!-- 상대 경로 -->
+    <img src="./dog.png"/>          <!-- 현재 위치 -->
+    <img src="../dog.png" />        <!-- 상위 위치 -->
+    <img src="../day03/dog.png" />  <!-- 상위 위치내 폴더로 이동 -->
+
+    <!-- 절대 경로 1. 서버(자료 공유 가능한 PC) 기준 2. 로컬 (혼자 쓰는 PC) 기준 -->
+    <!-- 1. http://127.0.0.1:5500/day02/4_이미지및동영상.html -->
+        <!-- 윈도우 검색/찾기 : cmd -> ipconfig 입력 후 엔터 -> IPv4 주소 : 본인 pc ip -->
+        <!-- http://127.0.0.1:5500/day02/4_이미지및동영상.html -->
+        <!-- http://192.168.30.241:5500/day02/4_이미지및동영상.html -->
+    <!-- 2. file:///C:/Users/tj-bu-703-14/Desktop/tj/day02/4_이미지및동영상.html-->
+    
+    <!-- 로컬 기준-->
+    <img src="C:\Users\tj-bu-703-14\Desktop\tj\day02\dog.png"/>
+    
+    <!-- 서버 기준 -->
+    <img src="http://192.168.30.241:5500/day02/dog.png"/>
+    
+    <h1> 오디오 마크업 1. src="파일경로" 2. controls 3. autoplay (브라우저 정책에 따라 금지) 4. muted(음소거)  (자바스크립트로 강제로 할 수 있다)</h1>
+    <audio src="오디오.mp3" controls autoplay> </audio>         <!-- controls autoplay -->
+
+    <h1> 비디오 마크업 : </h1>
+    <video src="비디오.mp4" controls autoplay muted> </video>   <!-- muted : 음소거. muted 사용하면 autoplay 가능-->
+
+    <h1> 외부 멀티미디어 마크업 </h1>
+    <h2> 유튜브 영상 (유튜브 영상 공유 -> 퍼가기 -> iframe 복사)</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4OBrPjW_Mkw?si=0pxAA5wCGWFSI2KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2> 구글 지도 </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.8533545656724!2d126.71847280114888!3d37.49124693702767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c465ba931ed%3A0x23b1e1147d0cb66!2z67aA7Y-J7Jet!5e0!3m2!1sko!2skr!4v1715136808821!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
