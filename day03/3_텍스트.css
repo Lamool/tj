@@ -1,0 +1,57 @@
+
+/*
+    CSS 주석
+    어디에{ 무엇을: 어떻게; }
+    어디에{ 무엇을: 어떻게; 무엇을: 어떻게; }
+
+    px : 픽셀, 고정형 크기
+
+
+*/
+
+.title {
+    font-family: "궁서";    /* 글꼴 : 사용자 PC에 설치된 글꼴 가능 */
+    font-size : 30px;       /* 글꼴 크기 */
+    font-style: italic;     /* 기울기*/
+    font-weight: bold;      /* 진하게 : h마크업들은 기본값 */ 
+}
+
+
+
+/* ================ 웹폰트 : 눈누 [ https://noonnu.cc/ ] ================ */
+@font-face {
+    font-family: 'YangjuByeolsanA1';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/YangjuByeolsanA1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ======================== ============== ======================== */
+
+.content{
+    /* 웹폰트 : 설치X, 폰트 제공하는 서버 제공*/
+    font-family: 'YangjuByeolsanA1';
+    color: gold;          /* 폰트 색상 */
+    word-spacing: 10px;     /* 단어 간격 : 어간 */
+    letter-spacing: 2px;    /* 글자 간격 : 자간 */
+    line-height: 160%;      /* 줄 간격 */
+}
+
+#writer{
+    /* 텍스트/컨텐츠 가로 정렬 : left, right, center */
+    text-align: center;
+
+    /* 텍스트 선긋기 underline : 밑줄 overline : 윗줄 line-through : 취소선 */
+    text-decoration: underline overline line-through;    /* 한 번에 여러 개 가능 */
+
+    /* 텍스트 그림자 : x축 y축 흐림 정도 색상 */
+    text-shadow: 0px 0px 10px red;
+
+    /* 색상 : 1. 색상이름 2. 헥사코드[16진수] 3.RGB색상[ 0~255 사이 3칸 ]*/
+    color: blue;
+    color: #0000FF;
+    color: rgb(0, 0, 255)
+
+
+
+}
