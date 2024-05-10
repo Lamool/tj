@@ -1,0 +1,68 @@
+/* 기본 여백 제거, 글머리 제거 */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* 구역 사이즈 :테두리 기준 */
+*{
+    box-sizing: border-box;
+}
+
+/* 확인용 
+*{
+    border: 1px solid red;
+}*/
+
+
+#content{
+    width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drink{
+    width: 500px;
+    padding: 20px;
+    background-color: #fff6f8;
+}
+
+.mainContent{
+    width: 500px;
+}
+
+ul{
+    padding: 40px;
+}
+
+.menuName{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.explanation{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.include{
+    font-size: 20px;
+}
+
+.include > p{
+    line-height: 170%;
+}
+
+
+
+
+
+.aaa{
+    width: 200px;
+}

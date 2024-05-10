@@ -1,0 +1,125 @@
+/* 기본 여백 제거, 글머리 제거 */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* 구역 사이즈 :테두리 기준 */
+*{
+    box-sizing: border-box;
+}
+
+/* a 마크업 기본값 제거 : 밑줄 제거, 색상변경 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 확인용 
+*{
+    border: 1px solid red;
+}
+*/
+
+/* 1. =============== 헤더 =============== */
+#header{
+    width: 1280px;
+    margin: 30px auto;
+    display: flex;      /* 하위 요소들의 배치 방법 */
+    justify-content: space-between; /* 양쪽 끝에 균등 정렬 */
+    align-items: center;
+}
+
+#topMenu{
+    display: flex;
+    justify-content: flex-end;      /* flex 요소 오른쪽 정렬 */
+    margin: 10px 0px;
+    font-size: 10px;
+}
+
+#topMenu > li{
+    margin-left: 20px;      /* li 마다 왼쪽 바깥 여백 */
+}
+
+#mainMenu{
+    display: flex;
+    margin: 20px 0px;       /* 바깥 여백 */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mainMenu > li{
+    margin-left: 70px;
+}
+
+
+/* =============== 메인이미지 =============== */
+#mainImg{
+    width: 100%;
+}
+
+
+/* 2. =============== 본문 =============== */
+#content{
+    width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aside{
+    width: 250px;
+}
+
+#aside > h3{
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#aside > ul > li{
+    border-bottom: 2px solid #eeeeee;
+    padding: 10px;
+}
+
+#mainContent{
+    width: 1000px;
+}
+
+#mainContent > h3 {
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* 이미지 가운데 오게 하는 법 */
+/* 1. 부모를 만들어주거나 */
+.imgDslr{
+    text-align: center;
+}
+
+/* 2. display: block, margin: 0 auto
+#mainContent > img{
+    display: block;
+    margin: 0 auto;     /* display : inline 이면 margin : auto 적용 불가능 
+}
+*/
+
+
+/* 3. 푸터 */
+#footer{
+    background-color: #2c2a29;
+}
+
+#footerContent{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 30px 0px;
+}
+
