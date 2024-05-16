@@ -1,0 +1,336 @@
+/* =============== 공통 CSS =============== */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ============= 레이아웃 CSS ============= */
+#content{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+#footer{
+    width: 100%;
+}
+
+/* ============= 작업용 CSS ============= */
+/* *{
+    border: 1px solid red;
+} */
+
+
+
+/* ============= 헤더 Top ============= */
+#headerTop{
+    display: flex;
+    height: 44px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding-right: 40px;
+}
+
+#coupon{
+    width: 170px;
+    height: 42px;
+    margin-right: 17px;
+    font-weight: bold;
+    background-color: #f5ff6b;
+    line-height: 43px;
+}
+
+#headerTop > li > a{
+    padding: 0px 13px;
+    font-size: 12px;
+}
+
+#headerTop > li > a> img{
+    padding-top: 5px;
+    width: 20px;
+}
+
+
+
+/* ============= 헤더 메인 ============= */
+#headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+#headerMain .logo{
+    width: 155px;
+}
+
+#headerMain > ul{
+    display: flex;
+    width: 80%;
+}
+
+#headerMain > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+}
+
+#headerMain > ul > li > a{
+    font-weight: 600;
+    color: #565656;
+}
+
+#headerMain .new{
+    color: #d73636;
+}
+
+#searchbox{
+    display: flex;
+    position: relative;
+}
+
+#searchbox > input{
+    border: 0px;
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid black;
+    padding: 0 30px 0 10px;
+    color: #9a9a9a;
+    outline: none;
+}
+
+#searchbox > a > img{
+    width: 20px;
+    position: absolute;
+    right: 7px;
+}
+
+
+
+/* ============= 드롭다운 ============= */
+#headerMain > ul > li{
+    position: relative;
+}
+
+#headerMain .subMenu{
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    text-align: center;
+    top: 65px;
+    display: none;
+}
+
+#headerMain .subMenu > li{
+    margin: 10px;
+}
+
+#headerMain .subMenu > li > a{
+    font-weight: 600;
+    color: #565656;
+}
+
+#headerMain > ul > li:hover .subMenu{
+    display: block;
+}
+
+
+
+/* ============= 헤더 메인 sticky ============= */
+#headerMain{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+
+/* ============= 메인 이미지 ============= */
+#mainImg{
+    width: 100%;
+}
+
+
+
+/* ============= 본문 ============= */
+#content > .title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#content > .comment{
+    text-align: center;
+    color: #c4c5d7;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+#items > .item{
+    width: 385px;
+    margin-bottom: 85px;
+}
+
+#items > .item > .itemImg{
+    width: 100%;
+}
+
+#items .color > span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+}
+
+#items .colorReview{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#items .review{
+    color: #888;
+}
+
+.itemName > div{
+    padding-bottom: 3px;
+}
+
+#items .size{
+    font-size: 11px;
+    color: #595959;
+}
+
+#items .itemPrice{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#items .disc{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 14px;
+    color: #db3536;
+    font-weight: bold;
+}
+
+#items .price{
+    text-decoration: line-through;
+    color: #8e8d8d;
+}
+
+
+
+/* ============= 푸터 ============= */
+#footerTop{
+    background-color: #F7F7F7;
+}
+
+#footerTopContent{
+    width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#footerTopContent h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#talk{
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#footerTopContent p{
+    font-size: 12px;
+    line-height: 150%;
+}
+
+#footerTopContent li{
+    margin-bottom: 15px;
+}
+
+#footerTopContent a, #Privacy{
+    font-size: 12px;
+}
+
+
+#footerBottom{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#footerBottom > p{
+    color: #9E9E9E;
+    font-size: 11px;
+    line-height: 150%;
+}
+
+
+
+/* ============= 팝업 ============= */
+#popup{
+    position: fixed;
+    right: 0px;
+    top: 33%;
+}
+
+#popup > ul > li{
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 12px;
+    position: relative;
+}
+
+#popup > ul > li > img{
+    width: 20px;
+    height: 20px;
+}
+
+#popup > ul > li > span{
+    position: absolute;
+    right: 44px;
+    top: 14px;
+    width: 80px;
+    height: 18px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+#popup > ul > li:hover .popupHover{
+    display: inline;
+}
+
