@@ -63,6 +63,8 @@ a{
 
 
 
+
+
 /* ============= 헤더 메인 ============= */
 #headerMain{
     display: flex;
@@ -144,6 +146,34 @@ a{
 }
 
 #headerMain > ul > li:hover .subMenu{
+    display: block;
+}
+
+
+#headerTop > li{
+    position: relative;
+}
+
+#headerTop .subMenuTop{
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    top: 30px;
+    left: -10px;
+    display: none;
+    z-index: 2;
+}
+
+#headerTop .subMenuTop > li{
+    margin: 10px;
+}
+
+#headerTop .subMenuTop > li > a{
+    font-weight: 600;
+    color: #565656;
+}
+
+#headerTop > li:hover .subMenuTop{
     display: block;
 }
 
