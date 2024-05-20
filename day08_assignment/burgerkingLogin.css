@@ -97,7 +97,55 @@ a{
     background-color: #f2ebe6;
 }
 
+#contentBottomWarp{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0px 45px;
+}
 
+#contentBottomWarp > .noMember{
+    margin-bottom: 16px;
+}
+
+#contentBottomWarp > .noMember > a{
+    font-size: 22px;
+    padding-right: 14px;
+}
+
+#contentBottomWarp > .noMember > #order{
+    color: #e22219;
+    
+    text-decoration: underline;
+    text-underline-offset: 13px;
+}
+
+#contentBottomWarp > .noMember > #orderList{
+    color: #b8b8b8;
+}
+
+#contentBottomWarp > .orderBox{
+    background-color: #ffffff;
+    padding: 57px 64px;
+}
+
+#contentBottomWarp > .orderBox > p{
+    font-size: 22px;
+}
+
+#contentBottomWarp > a{
+    width: 272px;
+    height: 76px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 26px;
+    padding: 20px 10px 22px;
+    color: white;
+    background: #512314;
+    border: 1px solid #512314;
+    border-radius: 10px;
+}
 
 
 
