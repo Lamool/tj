@@ -30,12 +30,22 @@
           3. *스트림 반복 함수 : forEach(), map(), filter()
 
         - for 중첩
-        for () {
             for () {
+                for () {
 
+                }
             }
-        }
 
+        - 무한루프 / 종료없는 반복
+            for( ; ; ) { }
+            for( ; true; ) { }
+            while (true) { }
+            - 의미없는 코드 반복은 메모리 과부하
+            - 조건문(IF)과 break
+
+        - 반복문 키워드
+            1. break;       // 가장 가까운 for문의 { ] 탈출/종료/끝내기
+            2. continue;    // 가장 가까운 for문의 증감식으로 이동
 */
 // 1. 동일한 코드를 입력하기 위해서는 ctrl+c -> ctrl+v 하면 된다. 복붙 -> 한계가 있다.
 console.log('콜라 구매');
@@ -124,12 +134,92 @@ for (let 부모 = 1; 부모 <= 5; 부모++) {         // 1부터 5까지 1씩 �
 }     // for1 end
 
 // 10. for 중첩을 이용한 구구단(2단~9단) 출력하시오.
-for (let i = 2; i <= 9; i++) {
+// 1. 단 : 2부터 9까지 1씩 증가. 상위for
+// 2. 곱 : 1부터 9까지 1씩 증가. 하위for
+for (let i = 2; i <= 9; i++) {          // 단 : 8회
     console.log(`${i}단`);
-    for (let j = 1; j <= 9; j++) {
+    for (let j = 1; j <= 9; j++) {      // 곱 : 9회, 9 * 8 => 72회 출력
         console.log(`${i} X ${j} = ${i * j}`);
     }
     console.log(``);
 }
 
+
+
+// 11.
+// for ( ; ; ) {        // 메모리 과부하의 오류 발생
+//     console.log('무한반복');
+// }
+
+// for ( ; ; ) {
+//     let input = prompt('무한입력중 : ');    // prompt, alert, confirm 등등 몇몇 함수들은 입력/출력시 모든 코드 실행 중지됨.
+//     console.log(input);
+//     if (input == 'X' || input == 'x') {
+//         break;
+//     }
+// }
+
+// 12. break; 이용한 1부터 10까지 1씩 증가하면서 5이면 반복문 종료
+for (let i = 1; i <= 10; i++) {
+    if (i == 10) {
+        break;          // i가 5이면 반복문 종료
+    }
+    console.log(i);
+}
+
+
+
+// 13. continue; 이용한 1부터 30까지 1씩 증가하면서 출력, 만일 5이면 건너뛰기.
+for (let i = 1; i <= 10; i++) {
+    if (i == 5) {
+        continue;       // i가 5이면 for문의 증감식으로 이동
+    }
+    console.log(i);
+}
+
+
+
+// 14. 입력받은 데이터를 numArray에 push(추가) 하기
+    // 조건1 : 중복 입력은 가능하지만 중복 저장은 불가능 하도록 하기
+    // 조건2 : 배열의 중복 데이터 없이 6개의 숫자가 등록되면 반복문 종료
+let numArray = [];
+let num = 0;
+let tf = true;
+
+for (let i = 0; i < 6; i++) {
+    num = prompt(`${i + 1}번째 숫자 입력`);
+
+    for (let j = 0; j < numArray.length; j++) {
+        if (numArray[j] == num) {
+            tf = false;
+            break;
+        }
+    }
+
+    if (tf == false) {
+        tf = true;
+        i--;
+        continue;
+    } else {
+        numArray.push(num);
+    }
+
+    if (numArray.length == 6) break;
+}
+
+// for문이 끝나고 배열 상태 출력
+console.log(numArray);
+
+// -> true로 만들어놨는데 6으로 바꿔서 약간 수정해야 함
+
+
+
+
+// for (let i = 1; i <=6; i++) {
+//     //2. 입력받고 변수에 저장한다.
+//     let num = prompt(`${i}번째의 수 입력`);
+//     // ************ 중복 제외 ************
+//         // 입력받은 숫자가 배열내 존재하면 for문 증감식으로 이동
+//         if
+// }
 
