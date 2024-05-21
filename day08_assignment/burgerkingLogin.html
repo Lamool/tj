@@ -14,21 +14,17 @@
             <div id="headerTopContent">
                 <ul>
                     <li> <a href="#">브랜드홈</a> </li>
-                    <li>
-                        <span>|</span> 
-                        <a href="#">로그인</a>
-                    </li>
-                    <li>
-                        <span>|</span>
-                        <a href="#">고객센터</a>
-                    </li>
+                    <li> <span>|</span> </li>
+                    <li> <a href="#">로그인</a> </li>
+                    <li> <span>|</span> </li>
+                    <li><a href="#">고객센터</a> </li>
                 </ul>
 
 
-                <div>
-                    <img/>
-
-                    <span></span>
+                <div id="logoJoin">
+                    <div id="logoImg">
+                        <span>버거킹</span>
+                    </div>
 
                     <a href="#">회원가입</a>
                 </div>
@@ -40,7 +36,8 @@
         <div id="headerBottom">
             <div id="headerBottomContent">
                 <a>Home</a>
-                <a>> 로그인</a>
+                <div></div>
+                <a>로그인</a>
             </div>
 
         </div>
@@ -71,39 +68,51 @@
                         
                         <br>
 
-                        <input type="text" placeholder="아이디 (이메일)"/>
-                        <!-- <button>x</button> -->
+                        <div id="idPs">
 
-                        <div id="ps">
-                            <input type="password" placeholder="비밀번호"/>
-                            <button id="eye" type="button"> </button>
-                        </div>
+                            <input type="text" placeholder="아이디 (이메일)"/>
+                            <!-- <button>x</button> -->
 
-
-
-                        <div>
-                            아이디 저장
-                            자동 로그인
-
-
-                        </div>
+                            <div id="ps">
+                                <input type="password" placeholder="비밀번호"/>
+                                <button id="eye" type="button"> </button>
+                            </div>
 
 
 
-                        <div id="btns">
-                            <a id="login" href="#">로그인</a>
+                            <div id="checkWarp">
+                                <div class="checkSpace">
+                                    <input type="checkbox" id="check"/>
+                                    <label for="check"> </label>
+                                    <span>아이디 저장</span>
+                                </div>
+                                
+                                <div class="checkSpace">
+                                    <input type="checkbox" id="check2"/>
+                                    <label for="check2"> </label>
+                                    <span>자동 로그인</span>
+                                </div>
+                            </div>
 
-                            <a id="signup" href="#">회원가입</a>
 
 
-                        </div>
+                            <div id="btns">
+                                <a id="login" href="#">로그인</a>
+
+                                <a id="signup" href="#">회원가입</a>
+
+
+                            </div>
 
 
 
-                        <div>
-                            <a href="#">아이디 찾기</a>
-                            <span>|</span>
-                            <a href="#">비밀번호 찾기</a>
+                            <div id="find">
+                                <a id="findId" href="#">아이디 찾기</a>
+                                <span>|</span>
+                                <a id="findPs" href="#">비밀번호 찾기</a>
+                            </div>
+
+
                         </div>
 
 
