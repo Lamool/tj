@@ -15,24 +15,13 @@ a{
     text-decoration: none;
 }
 
-/* ============= 레이아웃 CSS ============= */
+
+
+/* ============= 헤더 레이아웃============= */
 #headerTopContent, #headerBottomContent{
-    width: 1280px;
+    width: 1184px;
     margin: 0 auto;
 }
-/* #content{
-    width: 1600px;
-    margin: 0 auto;
-}
-
-#footer{
-    width: 100%;
-} */
-
-/* ============= 작업용 CSS ============= */
-/* *{
-    border: 1px solid red;
-} */
 
 
 
@@ -40,17 +29,6 @@ a{
 #headerTop{
     background-color: #e22219;
 }
-
-
-
-/* ============= 헤더 Top sticky ============= */
-#headerTop{
-    position: sticky;
-    top: 0px;
-    z-index: 3;
-}
-
-
 
 #headerTop > #headerTopContent > ul{
     display: flex;
@@ -67,21 +45,31 @@ a{
     color: white;
     font-size: 14px;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 #headerTop > #headerTopContent > #logoJoin{
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 0px;
+    align-items: center;
 }
 
-#headerTop > #headerTopContent > #logoJoin > #logoImg{
-    background: url(../img/logo_delivery.26d1d682.png) no-repeat 0;
-    width: 90px;
+#headerTop > #headerTopContent > #logoJoin > #logo{
+    display: flex;
+    align-items: center;
+}
+
+#headerTop > #headerTopContent > #logoJoin > #logo > #logoImg{
+    background: url(img/burgerkingLogo.png) no-repeat 0;
+    width: 82px;
     height: 120px;
 }
 
-
+#headerTop > #headerTopContent > #logoJoin > #logo > a{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
 
 #headerTop > #headerTopContent > #logoJoin > a{
     background-color: #512314;
@@ -99,7 +87,12 @@ a{
 
 
 
-
+/* ============= 헤더 Top sticky ============= */
+#headerTop{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
 
 
 
@@ -124,14 +117,14 @@ a{
 #headerBottomContent > a{
     color: white;
     font-size: 15px;
+    font-weight: bold;
 }
-
 
 
 
 /* ============= 본문 Top 위 ============= */
 #contentTop{
-    width: 1280px;
+    width: 1184px;
     margin: 0 auto;
     padding: 75px 20px 10px;
 }
@@ -144,8 +137,8 @@ a{
 
 #contentTop > #contentWay > h3{
     font-size: 40px;
+    letter-spacing: -4px;
 }
-
 
 
 
@@ -154,7 +147,6 @@ a{
     display: flex;
     padding: 45px 0 70px;
 }
-
 
 
 
@@ -211,7 +203,7 @@ a{
 
 #contentTopLeft > #idPs > #ps > #eye{
     position: absolute;
-    right: 60px;
+    right: 10px;
     width: 30px;
     height: 63px;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0NFQTk1OUFGQzRFMTFFOEFGRDJENkE4M0EyRjBFRjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0NFQTk1OUJGQzRFMTFFOEFGRDJENkE4M0EyRjBFRjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQ0VBOTU5OEZDNEUxMUU4QUZEMkQ2QTgzQTJGMEVGMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQ0VBOTU5OUZDNEUxMUU4QUZEMkQ2QTgzQTJGMEVGMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrDEIQsAAANCSURBVHjatJZraM5xFMefZ5vFllkmd3uDZjFpJYzyJFNEMhHahFCYtjXslVpGrYyNIZRrIy/0ZBE2l8gltIh2SXvjDaa1p7G1zTKPz9F51s+//2Vkp76d3+X8zvd3Oef8//7i4mKfSDAYjEZlg8tZWVlh3yBLlEF6UXGSvn+wiWNUTwErtL0DhCHPtZ6csWmo2WA0GAVkg+2gGTzDvmWgxH7jqjNQd0CCzp0C/eTMV6DyPPy9l6cCF1j32fOqRTB8jloKvunQTlBpXHshuOpBnAIOgQ+sOwESPYkt5L06tCtCzlwf7Y1K/hW8AfWg08ZvrK5tZO18T2INsi260GeQHzfIc8BI2ukgjXYSWA0abPyPAw9Zu9Xtjf36PtkOt1Mpb+yUaqwfiqrSTVhF1uSw9ordiYtcSEV2g2NmqtFOA7P0mXpQG8BTuyCWVMV2kTWPJUUOOhC2Ge8o5BUGeSMooH9AySU2cvWEdql7HtvfWRMdCoWE/La+h52cBvvBGn37OSCxqampBqKf6Jv0N6NjU1NTG8AX2pmMJdv4kiiPx+ZulDqc6XLFLyB4gl5pjEk+lxsBtwkMMeZfuvjbxrqxcvzlHrnZqrreMp6nz1Sg5FXGXLuLv2GSsnLiSx7EY1SHFFbyoza1fZKLP9nU9Sh2e5/GPRfDgAbOD00pq+QLuWWsx8VfKb46Ium0HXQ4GK7nREnaLgFnbKI2H5tyo1/gUF7fRTYZHQgEfERZO5H4kf4qG2MpDMnMByWKsb1F+xpjdaBGb0SifS7jI5ivAWHa1YxNBWnqR8psJj5a+4lFMH6LsT9ytRaZASZKCmHXB9rEHtQxJhG/VsnnWchvKPlk+exC+jrisJ9YyR9h3EVzsVYbU9LBOua7wSdsO7W2x6vjFLUT8gTmaw3yakhf2dZqS91dIlUGTHAJkm7N3RiH+SOQ7RnQZ9H4PNai5G+jFHS55GOMy8YKOUCZ0+QfV20K19QLHnBVZ+m26J/JeKfNavBI6T0HFuhtZLB+uFy742dxIMIJ4lDTtUDIP9d3LSryz9WsFUzsFuom4nRpGXN7/5n4b8SG/DDk+1zf+H8IJI9Ry4wYCXsG1yCQl9AuMud+CTAAz7ZZp+2G6JgAAAAASUVORK5CYII=) no-repeat 50%;
@@ -256,8 +248,6 @@ a{
 
 
 
-
-
 #contentTopLeft > #idPs > #btns{
     display: flex;
     margin: 30px 0px;
@@ -296,14 +286,13 @@ a{
 
 #contentTopLeft > #idPs > #find > #findId{
     padding: 5px 18px 5px 0px;
+    font-weight: bold;
 }
 
 #contentTopLeft > #idPs > #find > #findPs{
     padding: 5px 18px;
+    font-weight: bold;
 }
-
-
-
 
 
 
@@ -381,20 +370,9 @@ a{
     border-right: 1px solid #333333;
 }
 
-
-
 #contentTopRight #naver, #kakao, #apple{
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -404,9 +382,9 @@ a{
 }
 
 #contentBottomWarp{
-    width: 1280px;
+    width: 1184px;
     margin: 0 auto;
-    padding: 50px 0px 45px;
+    padding: 80px 0px 55px;
 }
 
 #contentBottomWarp > .noMember{
@@ -458,6 +436,5 @@ a{
     border: 1px solid #512314;
     border-radius: 10px;
 }
-
 
 
