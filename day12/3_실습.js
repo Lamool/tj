@@ -72,8 +72,8 @@
 
 
 // 메모리 구성
-let todoList = [];
-let doo = [];
+let todoList = ['1교시 수업 듣기', '밥먹기', '공부하기'];
+let doo = [0, 0, 0];
 
 
 // 입력/저장 함수
@@ -109,15 +109,27 @@ function print() {
     for(let i = 0; i < todoList.length ; i++) {
         let currentTodo = todoList[i];
 
-        html += `
-                <li>
-                    <p>${ currentTodo }</p>
-                    <div>
-                        <button onclick="change(${i})" type="button">변경</button>
-                        <button onclick="remove(${i})" type="button">삭제</button>
-                    </div>
-                </li>
-                `
+        if (doo[i] == 0) {
+            html += `
+                    <li class="pink">
+                        <p>${ currentTodo }</p>
+                        <div>
+                            <button onclick="change(${i})" type="button">변경</button>
+                            <button onclick="remove(${i})" type="button">삭제</button>
+                        </div>
+                    </li>
+                    `
+        } else {
+            html += `
+            <li class="black">
+                <p>${ currentTodo }</p>
+                <div>
+                    <button onclick="change(${i})" type="button">변경</button>
+                    <button onclick="remove(${i})" type="button">삭제</button>
+                </div>
+            </li>
+            `
+        }
     }
 
     // 3. 대입 
@@ -142,10 +154,11 @@ function remove(deleteIndex) {
 // 변경 함수
 function change(changeIndex) {
     if (doo[changeIndex] == 0) {
-        document.querySelector("li").style.background= "black";  
+        doo[changeIndex] = 1;
     } else if (doo[changeIndex] == 1) {
-        document.querySelector("li").style.background= "pink";  
+        doo[changeIndex] = 0;
     }
 
+    print();
     
 }
