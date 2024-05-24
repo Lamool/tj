@@ -41,33 +41,6 @@
 	- input박스 1개
 	- 버튼 3개
 	- ul
-
-
-
-
-
-
-
-
-
-
-<li>
-            1교시 수업듣기
-            <button onclick="" type="button">변경</button>
-            <button onclick="" type="button">삭제</button>
-        </li>
-        <li>
-            밥먹기
-            <button onclick="" type="button">변경</button>
-            <button onclick="" type="button">삭제</button>
-        </li>
-        <li>
-            공부하기
-            <button onclick="" type="button">변경</button>
-            <button onclick="" type="button">삭제</button>
-        </li>
-		
-		
 */
 
 
@@ -135,7 +108,6 @@ function print() {
     // 3. 대입 
     ulli.innerHTML = html;        console.log( html );
     console.log( doo[0] );
-
 }
 
 
@@ -150,7 +122,6 @@ function remove(deleteIndex) {
 
 
 
-
 // 변경 함수
 function change(changeIndex) {
     if (doo[changeIndex] == 0) {
@@ -160,5 +131,4 @@ function change(changeIndex) {
     }
 
     print();
-    
 }

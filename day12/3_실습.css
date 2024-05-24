@@ -61,3 +61,33 @@ ul > li > div > button{
 } */
 
 
+
+
+
+
+#a{
+    text-align: center;
+    font-size: 50px;
+}
+#ddd{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+
+}
+#ddd> #inf{
+    border: 1px solid pink;
+    box-shadow: 0 0 10px pink;
+    font-size: 67px;
+    height: 80px;
+        
+    
+    
+}
+#dd{
+    border: 1px solid pink;
+    box-shadow:  0 0 10px pink;
+    padding: 7px 7px 7px 7px;
+   
+}
