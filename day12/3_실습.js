@@ -45,8 +45,8 @@
 
 
 // 메모리 구성
-let todoList = ['1교시 수업 듣기', '밥먹기', '공부하기'];
-let doo = [0, 0, 0];
+let todoList = [];
+let doo = [];
 
 
 // 입력/저장 함수
