@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='3_Calendar.css'>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <button onclick="previousMonth()" type="button"> < </button>
+
+            <h3 id="date">  </h3>
+
+            <button onclick="nextMonth()" type="button"> > </button>
+        </div>
+
+        <table>
+            <thead>
+                <tr> <th>일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th></tr>
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src='3_Calendar.js'></script>
+</body>
+</html>

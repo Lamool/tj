@@ -1,0 +1,47 @@
+/* =============== 공통 CSS =============== */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+/* =============== 레이아웃 =============== */
+#wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+/* =============== 헤더 =============== */
+#header{
+    display: flex;
+}
+
+#header > h3{
+    width: 180px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+
+
+/* =============== 버튼 =============== */
+.btn{
+    background-color: white;
+    border: none;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* =============== 본문 =============== */
+

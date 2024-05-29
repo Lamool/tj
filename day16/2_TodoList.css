@@ -1,5 +1,5 @@
 /* =============== 공통 CSS =============== */
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-size: 30px;
@@ -13,20 +13,14 @@ li{
 
 
 /* =============== 레이아웃 =============== */
-#warp{
+#wrap{
     width: 900px;
     margin: 0 auto;
 }
 
 
-/* ============= 작업용 CSS ============= */
-/* *{
-    border: 1px solid red;
-} */
 
-
-
-/* ============= 리스트 ============= */
+/* =============== 리스트 =============== */
 .pink{
     background-color: pink;
     display: flex;
@@ -58,36 +52,38 @@ ul > li > div > button{
 
 .black > p{
     text-decoration: line-through;
-} 
+}
 
 
 
-
-
-
-#a{
+/* =============== 제목 부분 =============== */
+#title{
+    margin: 20px 0px;
     text-align: center;
     font-size: 50px;
 }
-#ddd{ 
+
+
+
+/* =============== 입력 창 부분 =============== */
+#inputAdd{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    
-
 }
-#ddd> #inf{
+
+#inputAdd > #toDoInput{
+    width: 825px;
+    height: 85px;
+    border: 1px solid pink;
+    box-shadow: 0 0  10px pink;
+    font-size: 30px;
+    padding: 7px;
+}
+
+#toDoBtn{
     border: 1px solid pink;
     box-shadow: 0 0 10px pink;
-    font-size: 67px;
-    height: 80px;
-        
-    
-    
-}
-#dd{
-    border: 1px solid pink;
-    box-shadow:  0 0 10px pink;
-    padding: 7px 7px 7px 7px;
-   
+    padding: 6px 9px;
+    font-size: 27px;
 }
