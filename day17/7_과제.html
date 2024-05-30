@@ -13,9 +13,9 @@
 </head>
 <body>
     
-    <div id="container">
+    <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
                 <h2>제품 등록</h2>
             </div>
             <div class="col-9">
@@ -23,9 +23,8 @@
             </div>
         </div>
 
-
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
                 <input id="name" type="text" placeholder="제품명 입력해주세요."/>
                 <input id="price" type="text" placeholder="가격 입력해주세요."/>
                 
@@ -33,37 +32,38 @@
 
                 <br><br>
                 
-                <button onclick="autoOrderAdd()" type="button" class="btn btn-danger">3초마다 자동주문</button>
+                <button onclick="timer()" type="button" class="btn btn-danger">3초마다 자동주문</button>
             </div>
 
             <div class="col-9">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">주문번호</th>
-                            <th scope="col">제품명</th>
-                            <th scope="col">가격</th>
-                            <th scope="col">주문일</th>
+                            <th scope="col" class="col-2">주문번호</th>
+                            <th scope="col" class="col-3">제품명</th>
+                            <th scope="col" class="col-3">가격</th>
+                            <th scope="col" class="col-3">주문일</th>
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody id="tBody">
                         <tr>
                             <th scope="row">1</th>
                             <td>코카콜라</td>
-                            <td>1,000</td>
+                            <td>1000</td>
                             <td>2024-05-30 17:00</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>사이다</td>
+                            <td>1500</td>
+                            <td>2024-05-30 17:37</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <td>환타</td>
+                            <td>2000</td>
+                            <td>2024-05-30 17:52</td>
                         </tr>
                     </tbody>
                 </table>
@@ -71,8 +71,10 @@
             </div>
 
         </div>
+    
+    
 
-    </div>
+   
 
 
 
