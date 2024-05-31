@@ -13,10 +13,10 @@
             <div class="col-3">
                 <h3>인사정보</h3>
 
-                <form >
-                    <input type="text" class="form-control" placeholder="이름"> <br/>
-                    <input type="text" class="form-control" placeholder="생년월일"> <br/>
-                    <button onclick="" type="button" class="btn btn-primary">인사등록</button>
+                <form>
+                    <input id="hrName" type="text" class="form-control" placeholder="이름"> <br/>
+                    <input id="hrBirth" type="text" class="form-control" placeholder="생년월일"> <br/>
+                    <button onclick="인사등록()" type="button" class="btn btn-primary">인사등록</button>
                 </form>
                 <br/>
                 
@@ -29,7 +29,7 @@
                             <th>생년월일</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="hrList">
                         <tr>
                             <td>1</td>
                             <td>Mark</td>
@@ -49,10 +49,10 @@
             <div class="col-3">
                 <h3>부서정보</h3>
 
-                <form >
-                    <input type="text" class="form-control" placeholder="부서명"> <br/>
-                    <input type="text" class="form-control" placeholder="대표연락처"> <br/>
-                    <button onclick="" type="button" class="btn btn-primary">부서등록</button>
+                <form>
+                    <input id="depName" type="text" class="form-control" placeholder="부서명"> <br/>
+                    <input id="depPhone" type="text" class="form-control" placeholder="대표연락처"> <br/>
+                    <button onclick="부서등록()" type="button" class="btn btn-primary">부서등록</button>
                 </form>
                 <br/>
                 
