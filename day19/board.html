@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 부트스트랩 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div id="header">
+            <!-- 부트스트랩의 내비게이션 바 -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">더조은웹</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="board.html">게시판</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">제품목록</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">제품등록</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!-- 부트스트랩의 내비게이션 바 end -->
+        </div>
+
+
+        <div id="main">
+          <h3>게시판</h3>
+          <button onclick="writeMove()" type="button">글쓰기</button>
+
+          <table>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일</th>
+              <th>조회수</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>안녕하세요</td>
+              <td>ttttt</td>
+              <td>2024-06-03</td>
+              <td>10</td>
+            </tr>
+          </table>
+            
+        </div>
+
+
+    </div>
+    
+
+
+    <!-- 부트스트랩 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- 공통 -->
+    <script src="index.js"></script>
+    <!-- 회원가입 JS -->
+    <script src="board.js"></script>
+</body>
+</html>
+
+<!-- 
+
+  board.html : 모든 html 상단 nav에 <li class="nav-item"<a class="nav-link" href="board.html">게시판</a></li>
+      1. 모든 글출력 페이지(board.html)화면 구성
+
+      글쓰기 [버튼]
+      번호  제목  작성자(아이디)    작성일    조회수 <----- table
+
+  --------------------------------------------------
+
+  write.html : board.html에서 글쓰기 버튼 클릭시 이동
+    1. 만일 비로그인 상태이면 글쓰기 페이지 접근 제한 하고 안내후 login.html로 이동
+    2. 만일 로그인 상태이면 '제목'과 '내용'을 입력받아 글쓰기 처리
+
+ -->
