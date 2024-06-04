@@ -39,24 +39,23 @@
 
 
         <div id="main">
-          <h3>게시판</h3>
-          <button onclick="writeMove()" type="button">글쓰기</button>
+          <h3>게시물 전체 출력</h3>
+          <a href="write.html">글쓰기</a>
 
-          <table>
-            <tr>
-              <th>번호</th>
-              <th>제목</th>
-              <th>작성자</th>
-              <th>작성일</th>
-              <th>조회수</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>안녕하세요</td>
-              <td>ttttt</td>
-              <td>2024-06-03</td>
-              <td>10</td>
-            </tr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+
+            <tbody id="boardTbody">
+              
+            </tbody>
           </table>
             
         </div>
